@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TritonEats</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    </head>
+
+<body>
+
+
+  <!-- ================= HEADER / HERO SECTION ================= -->
+  <header id="home" class="header-container">
+
+    <!-- ── Top bar: logo + nav ── -->
+    <nav class="topbar">
+      <div class="topbar-inner">
+        <a href="#home" class="topbar-logo">
+          <span class="logo-mark">🔱</span>
+          <span class="logo-name">TritonEats</span>
+        </a>
+        <ul class="topbar-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#dining-halls">Dining Halls</a></li>
+          <li><a href="#ratings">Rate Restaurants</a></li>
+          <li><a href="#popular-dishes">Top Pick</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ── Hero: text left, card right ── -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="hero-headline">Find the best<br>food at UCSD.</h1>
+        <p class="hero-tagline">
+          Discover dining halls and campus favorites —<br>all rated by fellow Tritons.
+        </p>
+        <div class="hero-actions">
+          <a href="#dining-halls" class="hero-btn hero-btn-primary">Explore Now →</a>
+          <a href="#ratings" class="hero-btn hero-btn-outline">Submit a Rating</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="img/images.jpeg" alt="UCSD Dining Hall" class="hero-img" />
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about">
+    <h2>About TritonEats</h2>
+
+    <p>
+      TritonEats is a website designed to help Tritons explore campus 
+      dining halls. UCSD has many dining halls across campus, but it can be hard
+       to know which location has the best meals, restaurants, or menu items.
+    </p>
+
+    <p>
+      This website organizes UCSD dining halls by location, shows the restaurants
+      inside each dining hall, and provides descriptions and images of each
+      restaurant. Tritons can also rate restaurants based on taste, value, and
+      overall experience.
+    </p>
+
+    <p>
+      By collecting student ratings, TritonEats helps Tritons make better dining
+      choices and gives a clearer picture of which foods are most popular across
+      the campus.
+    </p>
+  </section>
+
+
+  <!-- ================= DINING HALLS SECTION ================= -->
+  <section id="dining-halls">
+    <h2>UCSD Dining Halls</h2>
+
+    <p>
+      Browse the seven UCSD dining halls below. Each card includes the dining hall
+      location, restaurants inside, and a rating feature.
+    </p>
+
+
+    <!-- ========== DINING HALL 1 ========== -->
+    <article class="dining-hall-card">
+      <h3>64 Degrees</h3>
+      
+
+      <p>
+        <strong>Location:</strong>
+        <a
+          href="https://www.google.com/maps/place/64+Degrees/@32.8747459,-117.244609,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06c7b8154acf:0x51e8bb9f09bfd68!8m2!3d32.8747459!4d-117.2420341!16s%2Fg%2F1tcy4ltl?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+        >
+          64 Degrees - Revelle College
+        </a>
+      </p>
+
+      <img
+        src="https://eu-images.contentstack.com/v3/assets/blt517884d3ef6fd53e/blt835930b6681a905d/66c743cc028326f525c8629d/092614_026.jpg"
+        alt="64 Degrees Dining Hall Image"
+        class="dining-hall-image"
+      />
+
+      <p>
+        Located in Revelle College, 64 Degrees is named after the average temperature of the Pacific
+        Ocean at La Jolla. It offers a wide range of food stations including a grill, Asian wok,
+        taqueria, sushi bar, pasta station, and garden salad bar. With its vibrant atmosphere and
+        diverse menu, 64 Degrees is a favorite dining destination for students living in and around
+        Revelle College.
+      </p>
+
+      <p>
+        <a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=64&locDetID=18&dayNum=0"
+           target="_blank">View Today's Menu</a>
+      </p>
+      <button class="expand-btn" onclick="toggleHall('64-degrees')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="64-degrees" style="display:none;">
+
+      <h4>Restaurants inside 64 Degrees</h4>
+
+      <div class="restaurant-card">
+        <h4>64 Triton Grill</h4>
+        <img src="https://www.studioearchitects.com/wp-content/uploads/2016/05/UCSD-64-Degrees-2.jpg"
+             alt="64 Triton Grill at 64 Degrees" class="dining-hall-image" />
+        <p>
+          64 Triton Grill is the classic comfort food station at 64 Degrees,
+          serving made-to-order burgers, crispy fries, chicken sandwiches, and
+          rotating daily specials. It is one of the most popular spots in the
+          dining hall, known for its hearty portions and satisfying flavors.
+          Students also love stopping by for the soft-serve ice cream, which
+          makes a great end to any meal.
+        </p>
+      
+        <label for="triton-grill-rating">Rate this restaurant:</label>
+        <select id="triton-grill-rating" name="triton-grill-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Wok</h4>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4IOVwXW29GW5cz4LJ2NjHwE3qdqMTx4C1CzEfutJGLsGOkuRuDO-i6DKehEBkAsmsZ7nnu6WtIblCedYTTLAi7ntllyn34gxIrQS3Owh_z_aP6zsKqasKYATRYk2-C-XD7hj33WC0b7ru=s1360-w1360-h1020-rw"
+             alt="Wok at 64 Degrees" class="dining-hall-image" />
+        <p>
+          Wok brings bold Asian flavors to 64 Degrees with a rotating weekly
+          menu that keeps things fresh and exciting. Expect stir-fries, fried
+          rice, noodle dishes, and flavorful sauces inspired by Chinese, Thai,
+          and other Asian cuisines. The menu changes regularly so there is
+          always something new to try throughout the quarter.
+        </p>
+
+        <label for="wok-rating">Rate this restaurant:</label>
+        <select id="wok-rating" name="wok-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Taqueria</h4>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDAxq4cHBm1dfxCrDGS71byFW01tB-szBpf_ueHEJC5rbGSGS4Ip6QtRAfwNDzr63LAs9_ZdlvCSDp5X_Ab635APmyu-3FD8AL8hEdsGfZ5-0USFwUc8aIfXJRnHzfCP6gMS_wxFPueJPf=s1360-w1360-h1020-rw"
+             alt="Taqueria at 64 Degrees" class="dining-hall-image" />
+        <p>
+          Taqueria is 64 Degrees' Mexican-inspired station, offering a
+          flavorful lineup of tacos, burritos, rice bowls, and sides. Students
+          can choose from a variety of proteins, toppings, and salsas to
+          customize their meal. The station also features rotating seasonal
+          desserts, making it a well-rounded stop for lunch or dinner.
+        </p>
+
+        <label for="taqueria-rating">Rate this restaurant:</label>
+        <select id="taqueria-rating" name="taqueria-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Garden Bar</h4>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJwAHw5uB1SbVkezxdKb1jGpehSItWBCq14j5YXXGOJPiIwbTys6Pi1MGwC9f8Z7jDA9K0EWPs-czfvnqtQ1u1XCoQFcSX7ei-gHwuu9RR1GNXLPYbexWqy42GpBrA9OaFhBvH=s1360-w1360-h1020-rw"
+             alt="Garden Bar at 64 Degrees" class="dining-hall-image" />
+        <p>
+          Garden Bar is the health-focused station at 64 Degrees, perfect for
+          students looking for a lighter, fresher meal. It offers build-your-own
+          salads with a wide variety of greens, toppings, and dressings, as well
+          as hearty soups and made-to-order sandwiches. The station is a
+          popular choice for students who want a balanced and nutritious option
+          without sacrificing flavor.
+        </p>
+
+        <label for="garden-bar-rating">Rate this restaurant:</label>
+        <select id="garden-bar-rating" name="garden-bar-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Umi</h4>
+        <img src="https://www.sushimachines.com/wp-content/uploads/2023/12/ucsd_operation1.jpg"
+             alt="Umi at 64 Degrees" class="dining-hall-image" />
+        <p>
+          Umi is 64 Degrees' dedicated sushi station, serving freshly made
+          sushi rolls, nigiri, and rice bowls. It is one of the most sought-after
+          spots in the dining hall, known for its quality ingredients and
+          creative flavor combinations. The station also offers special desserts,
+          making it a complete dining experience for sushi lovers on campus.
+        </p>
+
+        <label for="umi-rating">Rate this restaurant:</label>
+        <select id="umi-rating" name="umi-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Al Dente</h4>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE0DAjSMOx0nVVJVEe6YGzjxZNSPf5vhf4Lm7oXt2-YdqndajFbCMagoo__G44iKNrmA7lE3-IkwMt9tD-i4h2jRQhFramP209ZaFUoT7AQAqTKJEVzIQtB4bbTFxMiFzJm7dQAww=s1360-w1360-h1020-rw"
+             alt="Al Dente at 64 Degrees" class="dining-hall-image" />
+        <p>
+          Al Dente is 64 Degrees' Italian pasta station, serving a rotating
+          weekly selection of pasta dishes including spaghetti, penne, and
+          other classic styles with a variety of sauces and toppings. Each
+          dish is prepared fresh and seasoned generously, offering a warm and
+          filling meal. The changing menu ensures there is always a new
+          combination to enjoy throughout the week.
+        </p>
+
+        <label for="al-dente-rating">Rate this restaurant:</label>
+        <select id="al-dente-rating" name="al-dente-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Overall 64 Degrees Rating -->
+      <div class="restaurant-card">
+        <h5>Overall 64 Degrees Rating</h5>
+        <label for="64-degrees-overall-rating">Rate this restaurant:</label>
+        <select id="64-degrees-overall-rating" name="64-degrees-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 2 ========== -->
+    <article class="dining-hall-card">
+      <h3>Café Ventanas</h3>
+      
+      <p><strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/Caf%C3%A9+Ventanas/@32.8860312,-117.2451489,16z/data=!3m1!4b1!4m6!3m5!1s0x80dc06eadfbccde5:0x2f323bee165df22a!8m2!3d32.8860312!4d-117.242574!16s%2Fg%2F1tmqghn6?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">
+           Cafe Ventanas - ERC College
+        </a>
+      </p>
+
+      <img src="https://www.hungryones.com/wp-content/uploads/2016/02/cafe.ventanas.2658.jpg" alt="Café Ventanas Dining Hall Image" class="dining-hall-image" />
+
+      <p>
+        Located in ERC College, Café Ventanas is one of UCSD's most culturally
+        diverse dining halls, featuring globally inspired food stations that rotate
+        through Caribbean, Indian, African, and other world cuisines. Opened in 2024
+        after a major renovation, it also offers a coffeehouse and a variety of
+        grab-and-go options. Its vibrant atmosphere and unique menu make it a
+        standout dining destination on campus.
+      </p>
+
+      <p>
+        <a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=18&locDetID=8&dayNum=0"
+           target="_blank">View Today's Menu</a>
+      </p>
+      <button class="expand-btn" onclick="toggleHall('cafe-ventanas')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="cafe-ventanas" style="display:none;">
+
+      <h4>Restaurants inside Café Ventanas</h4>
+
+      <!-- HaPi -->
+      <div class="restaurant-card">
+        <h5>HaPi</h5>
+        <img src="https://fesmag.com/images/2024/06/fdpom_23_10-HDH_Ventanas-2092-nodes.jpg"
+             alt="HaPi at Ventanas" class="dining-hall-image" />
+        <p>
+          HaPi is Café Ventanas' signature handpie station, serving freshly baked
+          savory pastries with a rotating selection of fillings. Each handpie is
+          made with flaky crust and hearty ingredients, making it a satisfying
+          and portable meal option that is popular for students on the go between
+          classes.
+        </p>
+
+        <label for="hapi-rating">Rate this restaurant:</label>
+        <select id="hapi-rating" name="hapi-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Soul -->
+      <div class="restaurant-card">
+        <h5>Soul</h5>
+        <img src="https://hgwarchitecture.com/wp-content/uploads/2024/02/Ventanas-1a-scaled.jpg"
+             alt="Soul at Ventanas" class="dining-hall-image" />
+        <p>
+          Soul is Café Ventanas' Southern comfort food station, serving classic
+          American soul food including fried chicken, mac and cheese, collard
+          greens, and cornbread. The generous portions and rich, home-style
+          flavors make it one of the most comforting and popular stops in the
+          dining hall.
+        </p>
+
+        <label for="soul-rating">Rate this restaurant:</label>
+        <select id="soul-rating" name="soul-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Journey -->
+      <div class="restaurant-card">
+        <h5>Journey</h5>
+        <img src="https://fesmag.com/images/2024/06/fdpom_23_10-HDH_Ventanas-2032-nodes.jpg"
+             alt="Journey at Ventanas" class="dining-hall-image" />
+        <p>
+          Journey is Café Ventanas' globally inspired African and Middle Eastern
+          station, featuring bold and aromatic flavors. The menu includes beef
+          kofta, chicken harissa, flatbread, and other rotating specialties
+          drawn from across the African continent and beyond. It is a great
+          option for students looking to explore diverse and richly spiced cuisines.
+        </p>
+
+        <label for="journey-rating">Rate this restaurant:</label>
+        <select id="journey-rating" name="journey-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Tandoor -->
+      <div class="restaurant-card">
+        <h5>Tandoor</h5>
+        <img src="https://hgwarchitecture.com/wp-content/uploads/2024/02/Ventanas-1a-scaled.jpg"
+             alt="Tandoor at Ventanas" class="dining-hall-image"  />
+        <p>
+          Tandoor is Café Ventanas' Indian cuisine station, named after the
+          traditional clay oven used to cook its signature dishes. The menu
+          features tandoor-roasted meats, freshly baked naan, and fragrant
+          curries with a variety of spice levels. It is a favorite among
+          students who enjoy authentic, deeply flavorful South Asian cooking.
+        </p>
+
+        <label for="tandoor-rating">Rate this restaurant:</label>
+        <select id="tandoor-rating" name="tandoor-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Vibe -->
+      <div class="restaurant-card">
+        <h5>Vibe</h5>
+        <img src="https://plandesignbuild.ucsd.edu/_images/projects/Cafe-Ventanas.png"
+             alt="Vibe at Ventanas" class="dining-hall-image" />
+        <p>
+          Vibe is Café Ventanas' Caribbean-inspired station, bringing the
+          bold and sunny flavors of the islands to campus. The menu includes
+          jerk chicken, rice and peas, sweet plantains, and other rotating
+          Caribbean staples. The vibrant seasoning and tropical ingredients
+          make Vibe one of the most distinctive and lively stations in the
+          dining hall.
+        </p>
+
+        <label for="vibe-rating">Rate this restaurant:</label>
+        <select id="vibe-rating" name="vibe-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Kaldi -->
+      <div class="restaurant-card">
+        <h5>Kaldi</h5>
+        <img src="https://fesmag.com/images/2024/06/fdpom_UCSanDiego_Ventanas_Kaldi.jpg"
+             alt="Kaldi at Ventanas" class="dining-hall-image" />
+        <p>
+          Kaldi is Café Ventanas' coffeehouse station, named after the legendary
+          Ethiopian goat herder credited with discovering coffee. It serves
+          espresso drinks, drip coffee, teas, and rotating seasonal beverages.
+          It is the perfect spot to grab a morning coffee or an afternoon pick-me-up
+          before or after classes.
+        </p>
+
+        <label for="kaldi-rating">Rate this restaurant:</label>
+        <select id="kaldi-rating" name="kaldi-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Overall Ventanas Rating -->
+      <div class="restaurant-card">
+        <h5>Overall Ventanas Rating</h5>
+        <label for="ventanas-overall-rating">Rate this restaurant:</label>
+        <select id="ventanas-overall-rating" name="ventanas-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      </div>
+    </article>
+
+    <!-- ========== DINING HALL 3 ========== -->
+    <article class="dining-hall-card">
+      <h3>OceanView</h3>
+      
+      <p><strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/Oceanview+Terrace/@32.8828811,-117.2410763,17.83z/data=!4m6!3m5!1s0x80dc06c585bbbc7b:0x3e7d6dc21944bb35!8m2!3d32.8831037!4d-117.2427668!16s%2Fg%2F1tj2nrpr?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">
+           OceanView - Marshall College
+        </a> 
+      </p>
+
+      <img src="https://archinect.gumlet.io/uploads/37/378ceb4c20514389c9b87bcec0c2b8f8.jpg?fit=crop&auto=compress%2Cformat&enlarge=true&w=615&dpr=2" alt="OceanView Dining Hall Image" class="dining-hall-image" />
+
+      <p>
+        Located in Marshall College, Oceanview Terrace is known for its scenic canyon views and
+        diverse food offerings. The dining hall features a specialty stone-fired pizza oven, a
+        Mediterranean and Kosher-certified kitchen, Italian dishes, and a grab-and-go café with
+        pastries and espresso drinks. It is a popular gathering spot for students seeking quality
+        meals with a relaxed, open atmosphere.
+      </p>
+
+      <p><a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=05&locDetID=4&dayNum=0" target="_blank">View Today's Menu</a></p>
+      <button class="expand-btn" onclick="toggleHall('oceanview')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="oceanview" style="display:none;">
+      <h4>Restaurants inside OceanView</h4>
+
+      <div class="restaurant-card">
+        <h5>Counter Culture</h5>
+        <img src="https://static.wixstatic.com/media/45d647_a3ab0661ff8b45b4a62c53a18346d8a4~mv2.jpg/v1/fill/w_280,h_183,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/45d647_a3ab0661ff8b45b4a62c53a18346d8a4~mv2.jpg"
+              alt="Counter Culture at Oceanview" class="dining-hall-image">
+        <p>
+          Counter Culture is OceanView's café and dessert station, serving
+          house-baked pastries, gelato, and acai bowls. It also offers
+          espresso drinks, a variety of fruit smoothies, and toasted bagels
+          with unique spreads. It is a popular stop for students looking for
+          a sweet treat or a quick caffeinated pick-me-up between classes.
+        </p>
+
+          <label for="counter-culture-rating">Rate this restaurant:</label>
+          <select id="counter-culture-rating" name="counter-culture-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+
+        <div class="restaurant-card">
+        <h5>Spice (Kosher Kitchen)</h5>
+        <img src="https://archinect.gumlet.io/uploads/5b/5bc4ff4f67581ca470fa23db261fcc42.jpg?fit=crop&auto=compress%2Cformat&enlarge=true&w=615&dpr=2"
+              alt="Spice at Oceanview" class="dining-hall-image">
+        <p>
+          Spice is OceanView's Kosher-certified Mediterranean station,
+          offering garlic fries bowls, Greek salads, and mazza bowls
+          alongside other Middle Eastern and North African inspired dishes.
+          It is one of the few Kosher dining options on campus, making it
+          an important and well-loved destination for students with
+          specific dietary needs.
+        </p>
+
+          <label for="spice-rating">Rate this restaurant:</label>
+          <select id="spice-rating" name="spice-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+
+        <div class="restaurant-card">
+        <h5>Scholar's Pizza</h5>
+        <img src="https://archinect.gumlet.io/uploads/83/835a45cb43cfba652c3a849c96e43c1c.jpg?fit=crop&auto=compress%2Cformat&enlarge=true&w=615&dpr=2"
+              alt="Scholar's Pizza at Oceanview" class="dining-hall-image">
+        <p>
+          Scholar's Pizza is OceanView's stone-fired pizza station, serving
+          freshly made pizzas with a rotating selection of toppings and
+          sauces. Students can also build and customize their own pizza,
+          making it a fun and flexible option for any taste. The crispy,
+          fire-baked crust is a big draw for pizza lovers on campus.
+        </p>
+
+          <label for="scholar-pizza-rating">Rate this restaurant:</label>
+          <select id="scholar-pizza-rating" name="scholar-pizza-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+
+        <div class="restaurant-card">
+        <h5>Scholar's Italian</h5>
+        <img src="https://archinect.gumlet.io/uploads/53/5320d5885c167a993fe3468b533dfbe3.jpg?fit=crop&auto=compress%2Cformat&enlarge=true&w=615&dpr=2"
+              alt="Scholar's Italian at Oceanview" class="dining-hall-image">
+        <p>
+          Scholar's Italian is OceanView's pasta station, serving a
+          rotating selection of classic Italian dishes including pastas
+          and spaghetti with a variety of sauces and toppings. Students
+          can also build their own salads at this station, making it a
+          great all-in-one option for a hearty and customizable meal.
+        </p>
+
+          <label for="scholar-italian-rating">Rate this restaurant:</label>
+          <select id="scholar-italian-rating" name="scholar-italian-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+
+      <!-- Overall OceanView Rating -->
+      <div class="restaurant-card">
+        <h5>Overall OceanView Rating</h5>
+        <label for="oceanview-overall-rating">Rate this restaurant:</label>
+        <select id="oceanview-overall-rating" name="oceanview-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- ========== DINING HALL 4 ========== -->
+    <article class="dining-hall-card">
+      <h3>Foodworx</h3>
+      
+      <p><strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/Foodworx/@32.878797,-117.2330139,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06db1dce97d9:0x2b118f382d1c5e3b!8m2!3d32.878797!4d-117.230439!16s%2Fg%2F12hm2mgnk?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">
+           Foodworx - Pepper Canyon
+        </a>
+      </p>
+
+      <img src="img/foodworx.png" alt="Foodworx Dining Hall Image" class="dining-hall-image" />
+
+      <p>
+        Located in the Pepper Canyon area near the center of campus, Foodworx serves as a convenient
+        dining hub for students from multiple colleges. It offers a rotating selection of globally
+        inspired cuisines in a fast-casual format, making it an ideal stop between classes or
+        during busy school days. Its central location makes it one of the most accessible dining
+        spots on campus.
+      </p>
+
+      <p><a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=11&locDetID=6&dayNum=0" target="_blank">View Today's Menu</a></p>
+      <button class="expand-btn" onclick="toggleHall('foodworx')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="foodworx" style="display:none;">
+      <h4>Restaurants inside Foodworx</h4>
+
+      <!-- Foodworx Impinger -->
+      <div class="restaurant-card">
+        <h5>Foodworx Impinger</h5>
+        <img src="https://img.p.mapq.st/?url=https%3A%2F%2Fs3-media0.fl.yelpcdn.com%2Fbphoto%2FHb9dZGSz6Ah0gePtPqwKsg%2Fl.jpg&w=3840&q=75"
+             alt="Foodworx Impinger" class="dining-hall-image" />
+        <p>
+          The Impinger is Foodworx's signature high-heat conveyor oven station, turning out
+          made-to-order flatbreads, pizzas, and toasted sandwiches in minutes. The fast-fire
+          process gives each item a satisfying crispy finish while keeping the inside warm and
+          fresh. It's one of the quickest hot-meal options at Foodworx, perfect for students
+          with back-to-back classes.
+        </p>
+
+        <label for="impinger-rating">Rate this restaurant:</label>
+        <select id="impinger-rating" name="impinger-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Foodworx Deli & Salad -->
+      <div class="restaurant-card">
+        <h5>Foodworx Deli &amp; Salad</h5>
+        <img src="https://hdh-web.ucsd.edu/dining/apps/diningservices/img/hero-sixth-restaurants.jpg"
+             alt="Foodworx Deli and Salad" class="dining-hall-image" />
+        <p>
+          The Deli &amp; Salad station at Foodworx offers build-your-own sandwiches, wraps, and
+          fresh salads with a wide selection of proteins, cheeses, vegetables, and dressings.
+          Whether you're in the mood for a hearty deli sandwich or a light customized salad,
+          this station has flexible options to suit any appetite. It's a go-to for students
+          looking for a fresher, lighter meal.
+        </p>
+
+        <label for="foodworx-deli-rating">Rate this restaurant:</label>
+        <select id="foodworx-deli-rating" name="foodworx-deli-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Overall Foodworx Rating -->
+      <div class="restaurant-card">
+        <h5>Overall Foodworx Rating</h5>
+        <label for="foodworx-overall-rating">Rate this restaurant:</label>
+        <select id="foodworx-overall-rating" name="foodworx-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+      </div>
+    </article>
+
+    <!-- ========== DINING HALL 5 ========== -->
+    <article class="dining-hall-card">
+      <h3>Seventh College Dining</h3>
+      
+      <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/Seventh+Market/@32.8876782,-117.2445558,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06eb12db88c5:0xa96d604c0343144b!8m2!3d32.8876737!4d-117.2419809!16s%2Fg%2F1tgh7v_d?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Seventh Market — Seventh College</a></p>
+
+      <img src="https://today.ucsd.edu/news_uploads/Staud_110309_0500.jpg" alt="Seventh College Dining Hall Image" class="dining-hall-image" />
+
+      <p>
+        Located in Seventh College, Seventh College Dining is one of UCSD's newest dining facilities,
+        opened alongside the college in 2021. It features a modern dining experience with a
+        coffeehouse, a deli serving hot sandwiches and soups, and a bistro offering globally
+        inspired small plates and sushi. The dining hall embodies the diverse and forward-thinking
+        spirit of Seventh College.
+      </p>
+
+      <p><a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=27&locDetID=13&dayNum=0" target="_blank">View Today's Menu</a></p>
+      <button class="expand-btn" onclick="toggleHall('seventh-market')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="seventh-market" style="display:none;">
+      <h4>Restaurants inside Seventh College Dining</h4>
+
+      <div class="restaurant-card">
+        <h5>Seventh Coffeehouse</h5>
+        <img src="https://seventh.ucsd.edu/_images/residential-life-images/seventh-west-images/seventhMarket.jpg" alt="Seventh Coffeehouse" class="restaurant-image" />
+        <p>
+          Seventh Coffeehouse is the café station at Seventh College Dining, serving
+          a variety of lattes, teas, shakers, and seasonal drinks. It also
+          offers bagels, pastries, and other light snacks, making it a great
+          spot for a quick breakfast or an afternoon coffee break between
+          classes.
+        </p>
+        <label for="seventh-coffeehouse-rating">Rate this restaurant:</label>
+        <select id="seventh-coffeehouse-rating" name="seventh-coffeehouse-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h5>Northside Deli</h5>
+        <img src="img/Outside seventh market.png" alt="Northside Deli at Seventh Market" class="restaurant-image" />
+        <p>
+          Northside Deli is Seventh College Dining's quick-service deli station,
+          serving hot sandwiches and soups made to order. It is an ideal
+          stop for students looking for a warm, satisfying meal they can
+          take on the go. The hearty sandwiches and rotating soups make it
+          a reliable and popular option throughout the day.
+        </p>
+        <label for="seventh-market-rating">Rate this restaurant:</label>
+        <select id="seventh-market-rating" name="seventh-market-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h5>Bistro</h5>
+        <img src="img/Outside bistro.png" alt="Bistro at Seventh Market" class="restaurant-image" />
+        <p>
+          Bistro is Seventh College Dining's globally inspired small plates station,
+          offering a rotating menu of bold and creative dishes. Favorites
+          include Korean BBQ wings, dumplings in chili oil, udon, and
+          desserts like Thai mango sticky rice. The diverse and exciting
+          menu makes Bistro one of the most popular and talked-about spots
+          at Seventh College Dining.
+        </p>
+        <label for="bistro-rating">Rate this restaurant:</label>
+        <select id="bistro-rating" name="bistro-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h5>Bistro Sushi</h5>
+        <img src="https://images.squarespace-cdn.com/content/v1/5887f3786a49631903166dbd/1556551881516-NJJNT3NSD4L1FGYNFCO0/JPOV_20111213_45649-Edit.jpg" alt="Bistro Sushi at Seventh Market" class="restaurant-image" />
+        <p>
+          Bistro Sushi is Seventh College Dining's dedicated sushi station, offering
+          a rotating selection of freshly made sushi rolls and other Japanese
+          bites. It is one of the most sought-after stations in the dining
+          hall, so expect lines during peak meal times. The quality and
+          variety of the rolls make the wait well worth it.
+        </p>
+        <label for="bistro-sushi-rating">Rate this restaurant:</label>
+        <select id="bistro-sushi-rating" name="bistro-sushi-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Overall Seventh Market Rating -->
+      <div class="restaurant-card">
+        <h5>Overall Seventh College Dining Rating</h5>
+        <label for="seventh-market-overall-rating">Rate this restaurant:</label>
+        <select id="seventh-market-overall-rating" name="seventh-market-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      </div>
+    </article>
+
+    <!-- ========== DINING HALL 6 ========== -->
+    <article class="dining-hall-card">
+  <h3>Sixth College Dining</h3>
+
+      <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/Sixth+Market/@32.8800898,-117.2424852,20z/data=!4m6!3m5!1s0x80dc072587cfa2a9:0xb00bc95fb015e584!8m2!3d32.8800917!4d-117.2422501!16s%2Fg%2F11qywsn6tj?entry=ttu" target="_blank">Sixth College Dining — Sixth College</a></p>
+
+      <img
+        src="https://images.rsmdesign.com/caca44c5-6f9f-4baf-90d8-5dee8659e11f.jpg"
+        alt="Sixth College Dining"
+        class="dining-hall-image"
+      />
+
+      <p>
+        Located in Sixth College, Sixth College Dining is one of the most modern dining areas at
+        UC San Diego. It offers a variety of restaurants with different styles of food, including
+        Mexican-inspired fare, Hawaiian bowls, comfort food, and a convenience market. With its
+        diverse options and lively atmosphere, it is a popular place for students to eat, study,
+        and hang out with friends.
+      </p>
+
+      <p><a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=37&locDetID=24&dayNum=0" target="_blank">View Today's Menu</a></p>
+
+      <button class="expand-btn" onclick="toggleHall('sixth-college')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="sixth-college" style="display:none;">
+
+      <h4>Restaurants inside Sixth College</h4>
+
+  <!-- Sixth Market -->
+  <div class="restaurant-card">
+    <h5>Sixth Market</h5>
+
+    <img
+  src="https://images.rsmdesign.com/f19b4ab1-6b34-4a8e-826e-18f1b546d0e2.jpg"
+  alt="Sixth Market"
+  class="restaurant-image"
+/>
+
+    <p>
+      Sixth Market is a convenient grocery-style dining spot for students who
+      need quick meals, snacks, and drinks throughout the day. The market
+      carries instant noodles, sandwiches, salads, yogurt, frozen meals,
+      desserts, and many beverage options.
+    </p>
+
+    <p>
+      Many students stop by Sixth Market late at night because it is fast and
+      easy to grab food between studying or classes. It is also a great place
+      to buy small essentials and quick breakfast items.
+    </p>
+
+    <label for="market-rating">Rate this restaurant:</label>
+    <select id="market-rating" name="market-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Sixth Coffeehouse -->
+  <div class="restaurant-card">
+    <h5>Sixth Coffeehouse</h5>
+
+    <img
+      src="https://images.rsmdesign.com/18b8a0dc-962e-4563-abf9-66681afb80d9.jpg"
+      alt="Sixth Coffeehouse at Sixth College"
+      class="restaurant-image"
+    />
+
+    <p>
+      Sixth Coffeehouse is the go-to spot for coffee lovers at Sixth College,
+      serving espresso drinks, lattes, teas, and seasonal beverages. It also
+      offers a selection of pastries and light snacks, making it a perfect
+      stop before morning classes or for a midday study break.
+    </p>
+
+    <label for="sixth-coffeehouse-rating">Rate this restaurant:</label>
+    <select id="sixth-coffeehouse-rating" name="sixth-coffeehouse-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Noodle -->
+  <div class="restaurant-card">
+    <h5>Noodle</h5>
+
+    <img
+      src="https://fesmag.com/images/2023/06/FDPOM_22_01-Dining_SixthCollege-NACUFS-8840-Makai-1.jpg"
+      alt="Noodle at Sixth College"
+      class="restaurant-image"
+    />
+
+    <p>
+      Noodle is Sixth College's dedicated noodle station, serving a rotating
+      selection of Asian-inspired noodle dishes including ramen, udon, and
+      stir-fried noodles. Each bowl is made fresh with flavorful broths,
+      seasonal vegetables, and your choice of protein, making it a warm and
+      satisfying option any time of day.
+    </p>
+
+    <label for="noodle-rating">Rate this restaurant:</label>
+    <select id="noodle-rating" name="noodle-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Wolftown -->
+  <div class="restaurant-card">
+    <h5>Wolftown</h5>
+
+    <img
+  src="https://images.rsmdesign.com/9ba91e87-d9f6-4ee8-84a9-1ba1f115d4ef.jpg"
+  alt="Wolftown at Sixth College"
+  class="restaurant-image"
+/>
+
+    <p>
+      Wolftown serves Mexican-inspired food such as burritos, tacos, nachos,
+      quesadillas, and rice bowls. Students can customize their meals by
+      choosing different proteins, toppings, and sauces.
+    </p>
+
+    <p>
+      One of the most popular menu items is the California burrito because of
+      its large portion size and flavorful ingredients. Wolftown is usually
+      busy during lunch and dinner hours because it is affordable and filling.
+    </p>
+
+    <label for="wolftown-rating">Rate this restaurant:</label>
+    <select id="wolftown-rating" name="wolftown-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Makai -->
+  <div class="restaurant-card">
+    <h5>Makai</h5>
+
+  <img
+  src="https://www.bsidesigns.com/wp-content/uploads/2023/06/UCSD-Restaurants-at-Sixth-1024x632.jpg"
+  alt="Makai at Sixth College"
+  class="restaurant-image"
+/>
+
+    <p>
+      Makai offers Hawaiian-inspired food with fresh ingredients and colorful
+      presentation. Students can order rice bowls with grilled chicken, pork,
+      or seafood along with vegetables and tropical sauces.
+    </p>
+
+    <p>
+      The restaurant is known for its balanced meals and refreshing flavors.
+      Many students enjoy eating here because the bowls feel healthier while
+      still being filling and satisfying.
+    </p>
+
+    <label for="makai-rating">Rate this restaurant:</label>
+    <select id="makai-rating" name="makaha-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Crave -->
+  <div class="restaurant-card">
+    <h5>Crave</h5>
+
+  <img
+  src="https://www.bsidesigns.com/wp-content/uploads/2023/06/UCSD-Restaurants-at-Sixth-Crave-1024x768.jpg"
+  alt="Crave at Sixth College"
+  class="restaurant-image"
+/>
+
+    <p>
+      Crave specializes in burgers, sandwiches, fries, and comfort food.
+      Students often visit Crave for quick meals that are warm, crispy,
+      and satisfying after long classes.
+    </p>
+
+    <p>
+      The loaded fries and chicken sandwiches are especially popular among
+      students. Crave is usually one of the busiest locations during dinner
+      time because of its large portions and casual atmosphere.
+    </p>
+
+    <label for="crave-rating">Rate this restaurant:</label>
+    <select id="crave-rating" name="crave-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+  <!-- Rooftop -->
+  <div class="restaurant-card">
+    <h5>Rooftop</h5>
+
+    <img
+      src="https://images.rsmdesign.com/725af89f-61fb-4414-9ef4-74ae26c2d3f4.jpg"
+      alt="Rooftop at Sixth College"
+      class="restaurant-image"
+    />
+
+    <p>
+      Rooftop is Sixth College's open-air dining terrace, offering stunning
+      views of the campus alongside a rotating selection of grilled items,
+      bowls, and seasonal specials. Its relaxed outdoor atmosphere makes it
+      a favorite spot for students looking to enjoy a meal with a view.
+    </p>
+
+    <label for="rooftop-rating">Rate this restaurant:</label>
+    <select id="rooftop-rating" name="rooftop-rating">
+      <option value="">Choose a rating</option>
+      <option value="5">5 - Excellent</option>
+      <option value="4">4 - Good</option>
+      <option value="3">3 - Okay</option>
+      <option value="2">2 - Not great</option>
+      <option value="1">1 - Poor</option>
+    </select>
+
+    <button type="button">Submit Rating</button>
+  </div>
+
+      <!-- Overall Sixth College Dining Rating -->
+      <div class="restaurant-card">
+        <h5>Overall Sixth College Dining Rating</h5>
+        <label for="sixth-college-overall-rating">Rate this restaurant:</label>
+        <select id="sixth-college-overall-rating" name="sixth-college-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 7 ========== -->
+    <article class="dining-hall-card">
+      <h3>Canyon Vista Marketplace</h3>
+      
+      <p>
+        <strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/Canyon+Vista/@32.8839947,-117.2358243,16z/data=!3m2!4b1!5s0x80dc06c2c5b225a7:0x1f9a045084d1139c!4m6!3m5!1s0x80dc06c2c46fdb61:0xd43d79bf3d795942!8m2!3d32.8839947!4d-117.2332494!16s%2Fg%2F1ttdn8k5?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">
+          Canyon Vista Marketplace - Warren College
+        </a>
+      </p>
+
+      <img src="https://studios.imgix.net/img/gallery-images/assets/uploads/UCSD_Canyon_Vista_Half_Width_Main_Entryway.jpg?q=85&w=1000"
+           alt="Canyon Vista Marketplace Dining Hall" class="dining-hall-image" />
+
+      <p>
+        Located in Warren College, Canyon Vista Marketplace is UCSD's largest halal-certified
+        residential dining facility. It offers healthy, globally inspired meals centered around
+        UCSD Dining's "Rooted in Flavor" concept, along with groceries, snacks, grab-and-go
+        items, and household essentials. The dining hall overlooks the canyon and serves as a
+        major social and dining hub for students.
+      </p>
+
+      <p>
+        <a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=24&locDetID=11&dayNum=0"
+           target="_blank">View Today's Menu</a>
+      </p>
+      <button class="expand-btn" onclick="toggleHall('canyon-vista')" aria-expanded="false">View Restaurants &amp; Ratings ▼</button>
+      <div class="hall-details" id="canyon-vista" style="display:none;">
+
+      <h4>Stations inside Canyon Vista Marketplace</h4>
+
+      <!-- Fusion Grill -->
+      <div class="restaurant-card">
+        <h5>Fusion Grill</h5>
+        <img src="https://studios.imgix.net/img/slideshow-images/assets/uploads/UCSD_Canyon_Vista_Full_Width_Carousel_2.jpg?w=2680&q=80"
+             alt="Fusion Grill at Canyon Vista" class="dining-hall-image" />
+        <p>
+          Fusion Grill is Canyon Vista's classic grill station serving made-to-order comfort
+          food with global influences, including burgers, sandwiches, fries, and rotating
+          specials. It is known for hearty halal-certified options and customizable meals.
+        </p>
+
+        <label for="fusion-rating">Rate this restaurant:</label>
+        <select id="fusion-rating" name="fusion-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Three Sixty (360) & 360 Quick Service -->
+      <div class="restaurant-card">
+        <h5>Three Sixty (360) &amp; 360 Quick Service</h5>
+        <img src="https://studios.imgix.net/img/slideshow-images/assets/uploads/UCSD_Canyon_Vista_Full_Width_Carousel_1.jpg?w=2680&q=80"
+             alt="Three Sixty (360) at Canyon Vista" class="dining-hall-image" />
+        <p>
+          Three Sixty is Canyon Vista's international noodle and rice bowl station featuring
+          customizable dishes with flexible sauces, seared proteins, and globally inspired
+          flavors. The station focuses on quick, made-to-order halal-certified meals.
+          <strong>360 Quick Service</strong> is the fast-grab counter of Three Sixty, offering
+          ready-made global cuisine and quick takeaway meals for students on the go between classes.
+        </p>
+
+        <label for="threesixty-rating">Rate this restaurant:</label>
+        <select id="threesixty-rating" name="threesixty-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Earl's Coffeehouse -->
+      <div class="restaurant-card">
+        <h5>Earl's Coffeehouse</h5>
+        <img src="https://studios.imgix.net/img/hero-images/assets/uploads/UCSD_Canyon_Vista_Hero_Desktop_Cafe.jpg?w=2800&q=80"
+             alt="Earl's Coffeehouse at Canyon Vista" class="dining-hall-image" />
+        <p>
+          Earl's Coffeehouse offers coffee, espresso drinks, pastries, and light café-style
+          snacks in a relaxed, study-friendly environment. It also connects to the market
+          section where students can purchase grab-and-go foods and essentials.
+        </p>
+
+        <label for="earls-rating">Rate this restaurant:</label>
+        <select id="earls-rating" name="earls-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <!-- Fresh -->
+      <div class="restaurant-card">
+        <h5>Fresh</h5>
+        <img src="https://studios.imgix.net/img/slideshow-images/assets/uploads/UCSD_Canyon_Vista_Full_Width_Carousel_3.jpg?w=2680&q=80"
+             alt="Fresh station at Canyon Vista" class="dining-hall-image" />
+        <p>
+          Fresh is Canyon Vista's health-focused station offering salads, wraps, grain bowls,
+          and lighter meal options made with fresh ingredients. The menu emphasizes balanced,
+          sustainable, and customizable meals.
+        </p>
+
+        <label for="fresh-rating">Rate this restaurant:</label>
+        <select id="fresh-rating" name="fresh-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+
+
+      <!-- Overall Canyon Vista Rating -->
+      <div class="restaurant-card">
+        <h5>Overall Canyon Vista Marketplace Rating</h5>
+        <label for="canyon-vista-overall-rating">Rate this restaurant:</label>
+        <select id="canyon-vista-overall-rating" name="canyon-vista-overall-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+        <button type="button">Submit Rating</button>
+      </div>
+      </div>
+    </article>
+
+  </section>
+
+
+  <!-- ================= RATINGS SECTION ================= -->
+  <section id="ratings">
+    <h2>Submit Your Food Rating</h2>
+
+    <p>
+      Share your experience at a UCSD dining hall or restaurant. Your review will
+      be saved to our database and displayed for other Tritons.
+    </p>
+
+    <form id="rating-form">
+      <label for="student-name">Your Name:</label>
+      <input
+        type="text"
+        id="student-name"
+        name="student-name"
+        placeholder="Your name"
+        required
+      />
+
+      <label for="dining-hall-choice">Dining Hall:</label>
+      <select id="dining-hall-choice" name="dining-hall-choice" required>
+        <option value="">Choose a dining hall</option>
+        <option value="64 Degrees">64 Degrees</option>
+        <option value="Cafe Ventanas">Café Ventanas</option>
+        <option value="OceanView">OceanView</option>
+        <option value="Foodworx">Foodworx</option>
+        <option value="Seventh College Dining">Seventh College Dining</option>
+        <option value="Sixth Market">Sixth Market</option>
+        <option value="Canyon Vista">Canyon Vista</option>
+      </select>
+
+      <label for="restaurant-name">Restaurant / Food Item:</label>
+      <input
+        type="text"
+        id="restaurant-name"
+        name="restaurant-name"
+        placeholder="Example: Umi, Taqueria, Noodle, Bistro Sushi"
+        required
+      />
+
+      <label for="overall-rating">Overall Rating:</label>
+      <select id="overall-rating" name="overall-rating" required>
+        <option value="">Choose a rating</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Okay</option>
+        <option value="2">2 - Not great</option>
+        <option value="1">1 - Poor</option>
+      </select>
+
+      <label for="review-text">Review:</label>
+      <textarea
+        id="review-text"
+        name="review-text"
+        rows="5"
+        placeholder="Write your thoughts about the food here..."
+        required
+      ></textarea>
+
+      <button type="submit">Submit Review</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <!-- ================= RECENT REVIEWS SECTION ================= -->
+  <section id="recent-reviews">
+    <h2>Recent Reviews</h2>
+    <p>See the latest 10 reviews submitted by Tritons.</p>
+
+    <div id="recent-reviews-list"></div>
+  </section>
+
+  <!-- ================= POPULAR DISHES / DATA SECTION ================= -->
+  <section id="popular-dishes">
+    <h2>Top Rated Food</h2>
+
+    <p>
+      These rankings are calculated from student reviews submitted to TritonEats.
+    </p>
+
+    <div id="top-picks-list"></div>
+  </section>
+
+  <!-- ================= ADDITIONAL RESOURCES ================= -->
+  <section id="resources">
+    <h2>Additional Resources</h2>
+
+    <p>
+      Learn more about UCSD dining locations, hours, and menus through official
+      campus dining resources.
+    </p>
+
+    <a href="https://hdhdining.ucsd.edu/" target="_blank">
+      Visit UCSD HDH Dining
+    </a>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>
+      TritonEats &copy; 2026 &mdash; Team 5: Sheila He, Fiona Feng, Peilin Zhang, Miaofen Zhou, Jocelyn Chen
+    </p>
+  </footer>
+
+
+<script>
+function toggleHall(slug) {
+  const details = document.getElementById(slug);
+  const btn = details.previousElementSibling;
+  const isOpen = details.style.display === 'block';
+
+  if (isOpen) {
+    details.style.display = 'none';
+    btn.textContent = 'View Restaurants & Ratings ▼';
+    btn.classList.remove('active');
+    btn.setAttribute('aria-expanded', 'false');
+  } else {
+    details.style.display = 'block';
+    btn.textContent = 'Hide Details ▲';
+    btn.classList.add('active');
+    btn.setAttribute('aria-expanded', 'true');
+    details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
