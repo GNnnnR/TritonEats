@@ -3,7 +3,7 @@
 > ## 🌐 Live Demo
 >
 > **Check out our website:** [TritonEats](https://gnnnnr.github.io/TritonEats/)
-TritonEats is a UCSD dining hall review website designed to help students discover better food options on campus. The website organizes UCSD dining halls, introduces restaurants inside each dining hall, allows users to submit ratings, and displays popular food choices based on student feedback.
+ is a UCSD dining hall review website designed to help students discover better food options on campus. The website organizes UCSD dining halls, introduces restaurants inside each dining hall, allows users to submit ratings, and displays popular food choices based on student feedback.
 
 ## Project Overview
 UCSD has many dining halls and restaurants across campus, but students may not always know which locations or menu items are worth trying. TritonEats helps solve this problem by providing a centralized place where Tritons can explore dining halls, view restaurant information, and share food ratings.
@@ -56,7 +56,7 @@ This section provides helpful UCSD dining-related links and information.
 ## File Structure
 
 ```text
-wicProj/
+TritonEats/
 ├── index.html
 ├── styles.css
 ├── script.js
